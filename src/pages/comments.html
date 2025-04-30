@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple User Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #2e1b66;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+            padding-left: 20px;
+        }
+
+        .nav a {
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .wrapper {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            width: 380px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #2196f3;
+            object-fit: cover;
+        }
+
+        .info h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:3;
+        }
+
+        .info p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .text {
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.6;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            
+        }
+
+        .email {
+            display: inline-block;
+            margin-top: 15px;
+            background: #f3f4f6;
+            color: #555;
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="./posts.html">posts |</a>
+            <a href="./users.html">users</a>
+            <a href="../index.html">| Uzum</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    </div>
+
+    <script src="../js/comments.js"></script>
+</body>
+
+</html>
